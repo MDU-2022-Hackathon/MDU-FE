@@ -2,12 +2,12 @@ import { Box, HStack } from "@chakra-ui/react";
 import type { NextComponentType } from "next";
 import MiniProfile from "./MiniProfile";
 
-const ListLeft: NextComponentType = () => {
 
+const ListLeft: NextComponentType= () => {
     return (
-        <Box p={0} my={5} width="full">
-            <Box mx={1} my={2}>추천 리스트</Box>
-            <HStack overflowX="scroll">
+        <Box py={0} mb={"40px"} width="full">
+            <Box mx={"0px"} mb={"1px"}>Text</Box>
+            <HStack h="200px" alignItems="center" overflowX="scroll">
                 <MiniProfile />
                 <MiniProfile />
                 <MiniProfile />
