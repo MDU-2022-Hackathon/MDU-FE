@@ -1,20 +1,10 @@
-import {
-    Box,
-    Button,
-    Center,
-    Flex,
-    Heading,
-    HStack,
-    Input,
-    Text,
-    VStack,
-} from "@chakra-ui/react";
+import { Button, Center, Flex, Input, VStack } from "@chakra-ui/react";
+import axios from "axios";
 import type { NextPage } from "next";
 import Image from "next/image";
+import Router from "next/router";
 import { useState } from "react";
 import Logo from "../assets/logo.png";
-import Router from "next/router";
-import axios from "axios";
 import { apiURI } from "../config";
 
 const SignIn: NextPage = () => {
@@ -30,9 +20,8 @@ const SignIn: NextPage = () => {
         });
         if (response.status === 200) {
             Router.push("/main");
-        }
-        else{
-            console.log(response.status)
+        } else {
+            console.log(response.status);
             alert("아이디 또는 비밀번호가 잘못되었습니다.");
         }
     }

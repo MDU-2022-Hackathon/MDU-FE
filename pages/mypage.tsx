@@ -1,46 +1,57 @@
-import { TabPanel, TabPanels, Button, Center, Container, Heading, Input, Stack, Text, Tab, TabList, Tabs, VStack } from "@chakra-ui/react";
+import {
+    TabPanel,
+    TabPanels,
+    Container,
+    Tab,
+    TabList,
+    Tabs,
+} from "@chakra-ui/react";
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import Header from "../components/Header";
 import ListLeft from "../components/ListLeft";
 import ListDown from "../components/ListDown";
 
-
 const Home: NextPage = () => {
     return (
-        <Container px="0px" maxW="full" maxH="full" m={0}>
+        <Container px="20px" maxW="full" maxH="full" m={0}>
             {/* 고정 상단바 */}
             <Header />
 
             {/* 고정 하단바 */}
-            <BottomNav active="home"/>
+            <BottomNav />
 
             {/* 내용 */}
-            <Tabs w={"full"} isFitted colorScheme={"brand"}>
-                <TabList position="fixed" bg="white" 
-                    top={"84px"} left={0} right={0} px="20px"
-                    color="rgb(112, 112, 112)" zIndex="1">
-                    <Tab fontSize="15px" >추천</Tab>
-                    <Tab fontSize="15px" >개발자</Tab>
-                    <Tab fontSize="15px" >디자이너</Tab>
-                    <Tab fontSize="15px" >기획자</Tab>
+            <Tabs w={"full"} isFitted>
+                <TabList
+                    position="fixed"
+                    bg="white"
+                    top={84}
+                    left={0}
+                    right={0}
+                    px={5}
+                >
+                    <Tab fontSize="small">추천</Tab>
+                    <Tab fontSize="small">개발자</Tab>
+                    <Tab fontSize="small">디자이너</Tab>
+                    <Tab fontSize="small">기획자</Tab>
                 </TabList>
 
-                <TabPanels>
-                    <TabPanel mt={"160px"} p={0}>
+                <TabPanels mt={150}>
+                    <TabPanel p={0}>
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                     </TabPanel>
-                    <TabPanel mt={"125px"} p={0}>
+                    <TabPanel p={0}>
                         <ListDown />
                     </TabPanel>
-                    <TabPanel mt={"125px"} p={0}>
+                    <TabPanel p={0}>
                         <ListDown />
                     </TabPanel>
-                    <TabPanel mt={"125px"} p={0}>
+                    <TabPanel p={0}>
                         <ListDown />
                     </TabPanel>
                 </TabPanels>

@@ -1,15 +1,5 @@
 import { ArrowBackIcon } from "@chakra-ui/icons";
-import {
-    Button,
-    Center,
-    Flex,
-    Heading,
-    Input,
-    Text,
-    VStack,
-    Image,
-    Box,
-} from "@chakra-ui/react";
+import { Box, Button, Center, Input, Text, VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Router from "next/router";
 import { useState } from "react";
@@ -24,7 +14,7 @@ const Init: NextPage = () => {
                 <Box marginBottom={30}>
                     <ArrowBackIcon w={10} h={10} />
                 </Box>
-                <Text  fontSize={20} textAlign={"center"}>
+                <Text fontSize={20} textAlign={"center"}>
                     환영합니다. 최지원님!
                 </Text>
                 <Text fontSize={20} textAlign={"center"}>

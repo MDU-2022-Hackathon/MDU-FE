@@ -3,7 +3,6 @@ import {
     Button,
     Center,
     Flex,
-    Input,
     Text,
     Textarea,
     VStack,
@@ -11,7 +10,6 @@ import {
 import type { NextPage } from "next";
 import Image from "next/image";
 import Router from "next/router";
-import { useState } from "react";
 import Logo from "../../assets/logo.png";
 
 const SignIn: NextPage = () => {
@@ -29,7 +27,6 @@ const SignIn: NextPage = () => {
                         borderWidth={0}
                         minHeight={200}
                         resize={"none"}
-                        
                     />
                 </Box>
 

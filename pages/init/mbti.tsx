@@ -2,16 +2,17 @@ import {
     Box,
     Button,
     Center,
-    Flex, Input, Text, VStack
+    Flex,
+    Input,
+    Text,
+    VStack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Router from "next/router";
-import { useState } from "react";
 import Logo from "../../assets/logo.png";
 
 const SignIn: NextPage = () => {
-
     return (
         <Center height={"95vh"} width="full">
             <VStack width={"full"} margin={10} gap={12}>
@@ -22,7 +23,9 @@ const SignIn: NextPage = () => {
                 </VStack>
 
                 <Box width={"full"}>
-                    <Text marginTop={12} color={"gray.500"}>MBTI</Text>
+                    <Text marginTop={12} color={"gray.500"}>
+                        MBTI
+                    </Text>
                     <Input
                         borderTop={0}
                         borderRight={0}

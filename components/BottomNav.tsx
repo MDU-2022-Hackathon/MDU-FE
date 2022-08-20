@@ -42,14 +42,17 @@ const BottomNav: any = ({active} : {active : string}) => {
                         스크랩
                     </Text>
                 </VStack>
-                <VStack>
+                <VStack onClick={() => {
+                            Router.push("/ourteam");
+                        }}>
                     <Image src={active === "team" ? TeamActiveIcon : TeamIcon} alt="team" width={22} height={22} />
-                    <Image src={TeamIcon} alt="home" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>
                         우리팀
                     </Text>
                 </VStack>
-                <VStack>
+                <VStack onClick={() => {
+                            Router.push("/mypage");
+                        }}>
                     <Image src={active === "profile" ? ProfileActiveIcon : ProfileIcon} alt="profile" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>
                         프로필

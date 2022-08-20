@@ -8,7 +8,7 @@ import {
     Heading,
     Input,
     Text,
-    VStack
+    VStack,
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import { useState } from "react";
@@ -89,7 +89,7 @@ const SignIn: NextPage = () => {
                         marginTop={4}
                         colorScheme="brand"
                         onClick={() => {
-                            Router.push("/initialize");
+                            Router.push("/init/mbti");
                         }}
                     >
                         가입 하기

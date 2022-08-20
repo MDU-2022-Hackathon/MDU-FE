@@ -7,11 +7,11 @@ import { useEffect } from "react";
 import Router from "next/router";
 
 const Home: NextPage = () => {
-    useEffect(() =>{
-      setTimeout(() => {
-        Router.push("/login");
-      }, 1000);
-    })
+    useEffect(() => {
+        setTimeout(() => {
+            Router.push("/login");
+        }, 1000);
+    });
 
     return (
         <Center height={"100vh"} width={"100vw"}>
