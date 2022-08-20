@@ -1,19 +1,10 @@
-import {
-    Box,
-    Button,
-    Center,
-    Flex,
-    Input,
-    Text,
-    Textarea,
-    VStack,
-} from "@chakra-ui/react";
+import { Center, Text, VStack } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import type { NextPage } from "next";
 import Image from "next/image";
 import Router from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Logo from "../../assets/logo.png";
-import { motion } from "framer-motion";
 
 const SignIn: NextPage = () => {
     useEffect(() => {
@@ -37,8 +28,8 @@ const SignIn: NextPage = () => {
                     }}
                 >
                     <Image src={Logo} alt="logo" width={200} height={200} />
-                    </motion.div>
-                
+                </motion.div>
+
                 <VStack
                     gap={0}
                     color="brand.100"

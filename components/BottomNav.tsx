@@ -26,14 +26,32 @@ const BottomNav: any = ({active} : {active : string}) => {
         >
             <Flex width="full" mx={10} justifyContent={"space-between"}>
                 <VStack>
-                    <Image src={active === "home" ? HomeActiveIcon : HomeIcon} alt="home" width={22} height={22} />
-                    <Text fontSize={14} color={active === "home" ? "gray.900" : "gray.500"}>
+                    <Image
+                        src={active === "home" ? HomeActiveIcon : HomeIcon}
+                        alt="home"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "home" ? "gray.900" : "gray.500"}
+                    >
                         홈
                     </Text>
                 </VStack>
                 <VStack>
-                    <Image src={ScrapeIcon} alt="home" width={22} height={22} />
-                    <Text fontSize={14} color={"gray.500"}>
+                    <Image
+                        src={
+                            active === "scrape" ? ScrapeActiveIcon : ScrapeIcon
+                        }
+                        alt="scrape"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "home" ? "gray.900" : "gray.500"}
+                    >
                         스크랩
                     </Text>
                 </VStack>
@@ -44,7 +62,12 @@ const BottomNav: any = ({active} : {active : string}) => {
                     </Text>
                 </VStack>
                 <VStack>
-                    <Image src={ProfileIcon} alt="home" width={22} height={22} />
+                    <Image
+                        src={ProfileIcon}
+                        alt="home"
+                        width={22}
+                        height={22}
+                    />
                     <Text fontSize={14} color={"gray.500"}>
                         프로필
                     </Text>

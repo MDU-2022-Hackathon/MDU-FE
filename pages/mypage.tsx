@@ -1,4 +1,11 @@
-import { TabPanel, TabPanels, Container, Tab, TabList, Tabs } from "@chakra-ui/react";
+import {
+    TabPanel,
+    TabPanels,
+    Container,
+    Tab,
+    TabList,
+    Tabs,
+} from "@chakra-ui/react";
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import Header from "../components/Header";
@@ -16,14 +23,18 @@ const Home: NextPage = () => {
 
             {/* 내용 */}
             <Tabs w={"full"} isFitted>
-                <TabList position="fixed" bg="white" 
-                    top={84} left={0} right={0} px={5}>
-
+                <TabList
+                    position="fixed"
+                    bg="white"
+                    top={84}
+                    left={0}
+                    right={0}
+                    px={5}
+                >
                     <Tab fontSize="small">추천</Tab>
                     <Tab fontSize="small">개발자</Tab>
                     <Tab fontSize="small">디자이너</Tab>
                     <Tab fontSize="small">기획자</Tab>
-
                 </TabList>
 
                 <TabPanels mt={150}>
