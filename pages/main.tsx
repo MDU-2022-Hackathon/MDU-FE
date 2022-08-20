@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             <Header />
 
             {/* 고정 하단바 */}
-            <BottomNav />
+            <BottomNav active="home"/>
 
             {/* 내용 */}
             <Tabs w={"full"} isFitted colorScheme={"brand"}>
