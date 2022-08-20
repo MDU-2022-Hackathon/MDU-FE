@@ -51,7 +51,7 @@ const BottomNav: any = ({active} : {active : string}) => {
                     </Text>
                 </VStack>
                 <VStack onClick={() => {
-                            Router.push("/mypage");
+                            Router.push("/myprofile");
                         }}>
                     <Image src={active === "profile" ? ProfileActiveIcon : ProfileIcon} alt="profile" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>

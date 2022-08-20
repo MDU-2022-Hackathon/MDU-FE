@@ -9,8 +9,7 @@ import {
     border,
 } from "@chakra-ui/react";
 import type { NextComponentType } from "next";
-import MiniProfile from "./MiniProfile";
-import { useState } from "react";
+import ProfileList from "./ProfileList";
 
 const ListDown: NextComponentType = () => {
     return (
@@ -56,32 +55,12 @@ const ListDown: NextComponentType = () => {
             </TabList>
 
             <TabPanels>
-                <TabPanel
-                    mt="7px"
-                    pl="13px"
-                    display="flex"
-                    flexDirection="row"
-                    flexWrap="wrap"
-                    justifyContent="space-around"
-                >
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
-                    <MiniProfile />
+                <TabPanel>
+                    <ProfileList />
                 </TabPanel>
-                <TabPanel></TabPanel>
+                <TabPanel>
+                    <ProfileList />
+                </TabPanel>
             </TabPanels>
         </Tabs>
     );
