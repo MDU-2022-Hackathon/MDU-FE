@@ -10,7 +10,7 @@ const ScrapHeader: NextComponentType = () => {
         <Center position={"fixed"} top={0} left={0} right={0} height={84} bg="white" px="20px" zIndex="1">
             <Center>
                 <Text>
-                    스크랩
+                    우리 팀
                 </Text>
             </Center>
             <Box position="fixed" top="35px" right="40px">
