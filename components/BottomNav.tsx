@@ -10,6 +10,7 @@ import HomeActiveIcon from "../assets/home_active.svg";
 import ProfileActiveIcon from "../assets/profile_active.svg";
 import ScrapeActiveIcon from "../assets/scrape_active.svg";
 import TeamActiveIcon from "../assets/team_active.svg";
+import Router from "next/router";
 
 const BottomNav: any = ({active} : {active : string}) => {
     return (
@@ -25,26 +26,31 @@ const BottomNav: any = ({active} : {active : string}) => {
             zIndex="1"
         >
             <Flex width="full" mx={10} justifyContent={"space-between"}>
-                <VStack>
+                <VStack onClick={() => {
+                            Router.push("/main");
+                        }}>
                     <Image src={active === "home" ? HomeActiveIcon : HomeIcon} alt="home" width={22} height={22} />
                     <Text fontSize={14} color={active === "home" ? "gray.900" : "gray.500"}>
                         홈
                     </Text>
                 </VStack>
-                <VStack>
-                    <Image src={ScrapeIcon} alt="home" width={22} height={22} />
+                <VStack onClick={() => {
+                            Router.push("/scrap");
+                        }}>
+                    <Image src={active === "scrap" ? ScrapeActiveIcon : ScrapeIcon} alt="scrap" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>
                         스크랩
                     </Text>
                 </VStack>
                 <VStack>
+                    <Image src={active === "team" ? TeamActiveIcon : TeamIcon} alt="team" width={22} height={22} />
                     <Image src={TeamIcon} alt="home" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>
                         우리팀
                     </Text>
                 </VStack>
                 <VStack>
-                    <Image src={ProfileIcon} alt="home" width={22} height={22} />
+                    <Image src={active === "profile" ? ProfileActiveIcon : ProfileIcon} alt="profile" width={22} height={22} />
                     <Text fontSize={14} color={"gray.500"}>
                         프로필
                     </Text>

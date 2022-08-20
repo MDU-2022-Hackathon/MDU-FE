@@ -5,6 +5,7 @@ import type { NextComponentType } from "next";
 import LogoNameImage from "../assets/logoname.png";
 
 const Header: NextComponentType = () => {
+
     return (
         <Center position={"fixed"} top={0} left={0} right={0} height={84} bg="white" px="20px" zIndex="1">
             <Flex width="full" mx={0} justifyContent={"space-between"} alignItems={"center"}>
