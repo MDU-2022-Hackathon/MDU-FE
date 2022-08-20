@@ -20,10 +20,10 @@ const Home: NextPage = () => {
                 <TabList position="fixed" bg="white" 
                     top={"84px"} left={0} right={0} px="20px"
                     color="rgb(112, 112, 112)" zIndex="1">
-                    <Tab fontSize="15px" >추천</Tab>
-                    <Tab fontSize="15px" >개발자</Tab>
-                    <Tab fontSize="15px" >디자이너</Tab>
-                    <Tab fontSize="15px" >기획자</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px"  >추천</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px">개발자</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px">디자이너</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px">기획자</Tab>
                 </TabList>
 
                 <TabPanels>

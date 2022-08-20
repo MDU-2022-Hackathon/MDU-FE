@@ -19,9 +19,9 @@ const Home: NextPage = () => {
                 <TabList position="fixed" bg="white" 
                     top={"84px"} left={"0px"} right={"0px"} px="20px"
                     color="rgb(112, 112, 112)" zIndex="1" justifyContent="center">
-                    <Tab fontSize="15px" maxW="28%">개발자</Tab>
-                    <Tab fontSize="15px" maxW="28%">디자이너</Tab>
-                    <Tab fontSize="15px" maxW="28%">기획자</Tab>
+                    <Tab fontSize="15px" maxW="28%" borderBlockEndWidth="4px" >개발자</Tab>
+                    <Tab fontSize="15px" maxW="28%" borderBlockEndWidth="4px" >디자이너</Tab>
+                    <Tab fontSize="15px" maxW="28%" borderBlockEndWidth="4px" >기획자</Tab>
                 </TabList>
 
                 <TabPanels>
