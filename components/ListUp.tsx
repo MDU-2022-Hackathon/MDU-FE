@@ -1,4 +1,4 @@
-import { Box, Flex, Stack, HStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 import type { NextComponentType } from "next";
 import MiniProfile from "./MiniProfile";
 

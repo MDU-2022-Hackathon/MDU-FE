@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import Header from "../components/Header";
 import ListUp from "../components/ListUp";
+import ListDown from "../components/ListDown";
 
 const Home: NextPage = () => {
     return (
@@ -27,13 +28,13 @@ const Home: NextPage = () => {
                             <ListUp />
                         </TabPanel>
                         <TabPanel>
-                            개발자 페이지
+                            <ListDown />
                         </TabPanel>
                         <TabPanel>
-                            디자이너 페이지
+                            <ListDown />
                         </TabPanel>
                         <TabPanel>
-                            기획자 페이지
+                            <ListDown />
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
