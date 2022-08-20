@@ -2,46 +2,50 @@ import { Box, TabPanel, TabPanels, Button, Center, Container, Heading, Input, St
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import Header from "../components/Header";
-import ListUp from "../components/ListUp";
+import ListLeft from "../components/ListLeft";
+import ListDown from "../components/ListDown";
 
 const Home: NextPage = () => {
     return (
-        <>
+        <Container px="20px" maxW="full" maxH="full" m={0}>
+            {/* 고정 상단바 */}
             <Header />
-            <BottomNav />
-            <Box>
-                <Tabs isFitted>
-                    <TabList width={"full"} position="fixed" bg="white" top="84px">
-                        <Tab>추천</Tab>
-                        <Tab>개발자</Tab>
-                        <Tab>디자이너</Tab>
-                        <Tab>기획자</Tab>
-                    </TabList>
 
-                    <TabPanels mt="120px">
-                        <TabPanel>
-                            <ListUp />
-                            <ListUp />
-                            <ListUp />
-                            <ListUp />
-                            <ListUp />
-                        </TabPanel>
-                        <TabPanel>
-                            개발자 페이지
-                        </TabPanel>
-                        <TabPanel>
-                            디자이너 페이지
-                        </TabPanel>
-                        <TabPanel>
-                            기획자 페이지
-                        </TabPanel>
-                    </TabPanels>
-                </Tabs>
-            </Box>
-            <Box width="full" marginTop={200} height={3000}>
-                
-            </Box>
-        </>
+            {/* 고정 하단바 */}
+            <BottomNav />
+
+            {/* 내용 */}
+            <Tabs w={"full"} isFitted>
+                <TabList position="fixed" bg="white" 
+                    top={84} left={0} right={0} px={5}>
+
+                    <Tab fontSize="small">추천</Tab>
+                    <Tab fontSize="small">개발자</Tab>
+                    <Tab fontSize="small">디자이너</Tab>
+                    <Tab fontSize="small">기획자</Tab>
+
+                </TabList>
+
+                <TabPanels mt={150}>
+                    <TabPanel p={0}>
+                        <ListLeft />
+                        <ListLeft />
+                        <ListLeft />
+                        <ListLeft />
+                        <ListLeft />
+                    </TabPanel>
+                    <TabPanel p={0}>
+                        <ListDown />
+                    </TabPanel>
+                    <TabPanel p={0}>
+                        <ListDown />
+                    </TabPanel>
+                    <TabPanel p={0}>
+                        <ListDown />
+                    </TabPanel>
+                </TabPanels>
+            </Tabs>
+        </Container>
     );
 };
 

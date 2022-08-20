@@ -5,14 +5,15 @@ const BottomNav: NextComponentType = () => {
     return (
         <Center
             position={"fixed"}
-            width="full"
             bottom={0}
+            left={0}
+            right={0}
             height={84}
             borderTopRadius={8}
             boxShadow={"dark-lg"}
             bg="white"
         >
-            <Flex width="full" mx={20} justifyContent={"space-between"}>
+            <Flex width="full" mx={5} justifyContent={"space-between"}>
                 <Button>홈</Button>
                 <Button>스크랩</Button>
                 <Button>우리팀</Button>
