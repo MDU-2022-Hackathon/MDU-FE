@@ -1,40 +1,31 @@
-import { TabPanel, TabPanels, Container, Tab, TabList, Tabs, VStack } from "@chakra-ui/react";
+import { TabPanel, TabPanels, Container, Tab, TabList, Tabs, VStack, Center, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import ListDown from "../components/ListDown";
-import ScrapHeader from "../components/ScrapHeader";
+import OurTeamHeader from "../components/OurTeamHeader";
 
 const Home: NextPage = () => {
     return (
         <Container px="0px" maxW="full" maxH="full" m={0}>
             {/* 고정 상단바 */}
-            <ScrapHeader />
+            <OurTeamHeader />
 
             {/* 고정 하단바 */}
-            <BottomNav active="team"/>
+            <BottomNav active="team" />
 
-            {/* 내용 */}
-            <Tabs w={"full"} isFitted colorScheme={"brand"}>
-                <TabList position="fixed" bg="white" 
-                    top={"84px"} left={0} right={0} px="20px"
-                    color="rgb(112, 112, 112)" zIndex="1">
-                    <Tab fontSize="15px" >개발자</Tab>
-                    <Tab fontSize="15px" >디자이너</Tab>
-                    <Tab fontSize="15px" >기획자</Tab>
-                </TabList>
-
-                <TabPanels>
-                    <TabPanel mt={"125px"} p={0}>
-                        <ListDown />
-                    </TabPanel>
-                    <TabPanel mt={"125px"} p={0}>
-                        <ListDown />
-                    </TabPanel>
-                    <TabPanel mt={"125px"} p={0}>
-                        <ListDown />
-                    </TabPanel>
-                </TabPanels>
-            </Tabs>
+            <Center height={"95vh"} width="full">
+                <VStack width={"full"} margin={10} gap={12}>
+                    <VStack
+                        gap={0}
+                        color="brand.100"
+                        fontWeight={600}
+                        fontSize={24}
+                    >
+                        <Text>현재 함께하는 팀원이 없어요💦</Text>
+                        <Text>나에게 맞는 팀원을 찾아보세요 :)</Text>
+                    </VStack>
+                </VStack>
+            </Center>
         </Container>
     );
 };
