@@ -4,9 +4,9 @@ import type { NextComponentType } from "next";
 const MiniProfile: NextComponentType = () => {
 
     return (
-        <Box w={100} h={100} bg="white">
+        <Box minW="200px" minH="200px" bg="white">
             <Center>
-                User
+                User Profile
             </Center>
         </Box>
     );
