@@ -13,11 +13,23 @@ import {
 import type { NextPage } from "next";
 import { useState } from "react";
 import Router from "next/router";
+import { apiURI } from "../config";
+import axios from "axios";
 
 const SignIn: NextPage = () => {
     const [id, setId] = useState("");
     const [password, setPassword] = useState("");
     const [isError, setIsError] = useState(false);
+
+    const handleSubmit = async function() {
+        const res = await axios.post(`${apiURI}/auth/register`, {
+            userId: id,
+            userPw: password,
+        });
+        if (res.status === 200) {
+            Router.push("/init/portfolio");
+        }
+    };
 
     return (
         <Box height={"100vh"} width="full">
@@ -88,9 +100,7 @@ const SignIn: NextPage = () => {
                         borderRadius={24}
                         marginTop={4}
                         colorScheme="brand"
-                        onClick={() => {
-                            Router.push("/init/mbti");
-                        }}
+                        onClick={handleSubmit}
                     >
                         가입 하기
                     </Button>

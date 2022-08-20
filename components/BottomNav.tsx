@@ -26,35 +26,79 @@ const BottomNav: any = ({active} : {active : string}) => {
             zIndex="1"
         >
             <Flex width="full" mx={10} justifyContent={"space-between"}>
-                <VStack onClick={() => {
-                            Router.push("/main");
-                        }}>
-                    <Image src={active === "home" ? HomeActiveIcon : HomeIcon} alt="home" width={22} height={22} />
-                    <Text fontSize={14} color={active === "home" ? "gray.900" : "gray.500"}>
+                <VStack
+                    onClick={() => {
+                        Router.push("/main");
+                    }}
+                >
+                    <Image
+                        src={active === "home" ? HomeActiveIcon : HomeIcon}
+                        alt="home"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "home" ? "brand.900" : "gray.500"}
+                    >
                         홈
                     </Text>
                 </VStack>
-                <VStack onClick={() => {
-                            Router.push("/scrap");
-                        }}>
-                    <Image src={active === "scrap" ? ScrapeActiveIcon : ScrapeIcon} alt="scrap" width={22} height={22} />
-                    <Text fontSize={14} color={"gray.500"}>
+                <VStack
+                    onClick={() => {
+                        Router.push("/scrap");
+                    }}
+                >
+                    <Image
+                        src={active === "scrap" ? ScrapeActiveIcon : ScrapeIcon}
+                        alt="scrap"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "scrap" ? "brand.900" : "gray.500"}
+                    >
                         스크랩
                     </Text>
                 </VStack>
-                <VStack onClick={() => {
-                            Router.push("/ourteam");
-                        }}>
-                    <Image src={active === "team" ? TeamActiveIcon : TeamIcon} alt="team" width={22} height={22} />
-                    <Text fontSize={14} color={"gray.500"}>
+                <VStack
+                    onClick={() => {
+                        Router.push("/ourteam");
+                    }}
+                >
+                    <Image
+                        src={active === "team" ? TeamActiveIcon : TeamIcon}
+                        alt="team"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "team" ? "brand.900" : "gray.500"}
+                    >
                         우리팀
                     </Text>
                 </VStack>
-                <VStack onClick={() => {
-                            Router.push("/myprofile");
-                        }}>
-                    <Image src={active === "profile" ? ProfileActiveIcon : ProfileIcon} alt="profile" width={22} height={22} />
-                    <Text fontSize={14} color={"gray.500"}>
+                <VStack
+                    onClick={() => {
+                        Router.push("/myprofile");
+                    }}
+                >
+                    <Image
+                        src={
+                            active === "profile"
+                                ? ProfileActiveIcon
+                                : ProfileIcon
+                        }
+                        alt="profile"
+                        width={22}
+                        height={22}
+                    />
+                    <Text
+                        fontSize={14}
+                        color={active === "profile" ? "brand.900" : "gray.500"}
+                    >
                         프로필
                     </Text>
                 </VStack>

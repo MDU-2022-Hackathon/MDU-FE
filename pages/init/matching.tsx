@@ -9,7 +9,7 @@ import Logo from "../../assets/logo.png";
 const SignIn: NextPage = () => {
     useEffect(() => {
         setTimeout(() => {
-            Router.push("/");
+            Router.push("/main");
         }, 3000);
     });
 

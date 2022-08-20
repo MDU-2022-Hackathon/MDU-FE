@@ -62,7 +62,7 @@ const Init: NextPage = () => {
                             setPortFolioType("notefolio");
                             console.log(portFolioType);
                         }}
-                        _hover={false}
+                        // _hover={false}
                     >
                         Notefolio
                     </Button>
@@ -81,7 +81,7 @@ const Init: NextPage = () => {
                         marginTop={4}
                         colorScheme="brand"
                         onClick={() => {
-                            Router.push("/initialize");
+                            Router.push("/init/mbti");
                         }}
                     >
                         포트폴리오 등록하기
