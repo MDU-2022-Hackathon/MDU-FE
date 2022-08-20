@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Jandi from '../components/Jandi'
 
 const Home: NextPage = () => {
 

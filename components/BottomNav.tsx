@@ -10,6 +10,7 @@ const BottomNav: NextComponentType = () => {
             height={84}
             borderTopRadius={8}
             boxShadow={"dark-lg"}
+            bg="white"
         >
             <Flex width="full" mx={20} justifyContent={"space-between"}>
                 <Button>홈</Button>

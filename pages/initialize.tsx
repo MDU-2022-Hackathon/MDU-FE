@@ -6,6 +6,8 @@ import {
     Input,
     Text,
     VStack,
+    Image,
+    Box
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 
