@@ -14,7 +14,7 @@ import ListLeft from "../components/ListLeft";
 
 const Home: NextPage = () => {
     return (
-        <Container px="21px" maxW="full" maxH="full" m={0}>
+        <Container px="0px" maxW="full" maxH="full" m={0}>
             {/* 고정 상단바 */}
             <Header />
 
@@ -39,21 +39,21 @@ const Home: NextPage = () => {
                     <Tab fontSize="15px">기획자</Tab>
                 </TabList>
 
-                <TabPanels mt={"160px"}>
-                    <TabPanel p={0}>
+                <TabPanels>
+                    <TabPanel mt={"160px"} p={0}>
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                         <ListLeft />
                     </TabPanel>
-                    <TabPanel p={0}>
+                    <TabPanel mt={"125px"} p={0}>
                         <ListDown />
                     </TabPanel>
-                    <TabPanel p={0}>
+                    <TabPanel mt={"125px"} p={0}>
                         <ListDown />
                     </TabPanel>
-                    <TabPanel p={0}>
+                    <TabPanel mt={"125px"} p={0}>
                         <ListDown />
                     </TabPanel>
                 </TabPanels>

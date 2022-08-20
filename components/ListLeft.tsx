@@ -4,7 +4,7 @@ import MiniProfile from "./MiniProfile";
 
 const ListLeft: NextComponentType = () => {
     return (
-        <Box py={0} mb={"40px"} width="full">
+        <Box py={0} mb={"40px"} width="full" pl="20px">
             <Box mx={"0px"} mb={"1px"}>
                 Text
             </Box>
