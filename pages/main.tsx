@@ -1,4 +1,4 @@
-import { TabPanel, TabPanels, Button, Center, Container, Heading, Input, Stack, Text, Tab, TabList, Tabs, VStack } from "@chakra-ui/react";
+import { TabPanel, TabPanels, Container, Tab, TabList, Tabs } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import Header from "../components/Header/Header";
