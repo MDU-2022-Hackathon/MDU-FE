@@ -1,6 +1,4 @@
 import { Button, Center, Flex, IconButton, Text, VStack } from "@chakra-ui/react";
-import { AnyNaptrRecord } from "dns";
-import type { NextComponentType } from "next";
 import Image from "next/image";
 import HomeIcon from "../assets/home.svg";
 import ProfileIcon from "../assets/profile.svg";
@@ -11,6 +9,7 @@ import ProfileActiveIcon from "../assets/profile_active.svg";
 import ScrapeActiveIcon from "../assets/scrape_active.svg";
 import TeamActiveIcon from "../assets/team_active.svg";
 import Router from "next/router";
+
 
 const BottomNav: any = ({active} : {active : string}) => {
     return (

@@ -22,18 +22,6 @@ const ProfileList: NextComponentType = () => {
             <MiniProfile />
             <MiniProfile />
             <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
-            <MiniProfile />
         </Flex>
 
     );

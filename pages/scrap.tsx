@@ -2,7 +2,7 @@ import { TabPanel, TabPanels, Container, Tab, TabList, Tabs, VStack } from "@cha
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
 import ListDown from "../components/ListDown";
-import ScrapHeader from "../components/ScrapHeader";
+import ScrapHeader from "../components/Header/ScrapHeader";
 import ProfileList from "../components/ProfileList";
 
 const Home: NextPage = () => {

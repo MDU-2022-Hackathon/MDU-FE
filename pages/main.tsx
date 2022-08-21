@@ -1,7 +1,7 @@
 import { TabPanel, TabPanels, Button, Center, Container, Heading, Input, Stack, Text, Tab, TabList, Tabs, VStack } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import BottomNav from "../components/BottomNav";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import ListLeft from "../components/ListLeft";
 import ListDown from "../components/ListDown";
 
@@ -20,10 +20,10 @@ const Home: NextPage = () => {
                 <TabList position="fixed" bg="white" 
                     top={"84px"} left={0} right={0} px="20px"
                     color="rgb(112, 112, 112)" zIndex="1">
-                    <Tab fontSize="15px" borderBlockEndWidth="4px"  >추천</Tab>
-                    <Tab fontSize="15px" borderBlockEndWidth="4px">개발자</Tab>
-                    <Tab fontSize="15px" borderBlockEndWidth="4px">디자이너</Tab>
-                    <Tab fontSize="15px" borderBlockEndWidth="4px">기획자</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px" >추천</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px" >개발자</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px" >디자이너</Tab>
+                    <Tab fontSize="15px" borderBlockEndWidth="4px" >기획자</Tab>
                 </TabList>
 
                 <TabPanels>

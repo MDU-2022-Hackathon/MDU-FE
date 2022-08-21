@@ -2,7 +2,7 @@ import { SearchIcon } from "@chakra-ui/icons";
 import { Box, Center, Flex } from "@chakra-ui/react";
 import Image from "next/image";
 import type { NextComponentType } from "next";
-import LogoNameImage from "../assets/logoname.png";
+import LogoNameImage from "../../assets/logoname.png";
 
 const Header: NextComponentType = () => {
 
