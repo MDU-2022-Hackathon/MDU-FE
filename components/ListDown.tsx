@@ -11,7 +11,34 @@ import {
 import type { NextComponentType } from "next";
 import ProfileList from "./ProfileList";
 
-const ListDown: NextComponentType = () => {
+const ListDown: any = (props : any) => {
+
+    /* 
+        users : userList = [
+            {
+                normal: {
+                    type: 'pm',
+                    stack: [Array],
+                    image: 'url',
+                    'self-introduction': '안녕하세요. 제 이름은 강병찬. ~ ',
+                    awards: [Array]
+                },
+
+                identification: {
+                    name: '강병찬',
+                    number: '01034531171',
+                    email: 'byungchan3476@gmail.com',
+                    mbti: 'intj',
+                    school: '연세대학교',
+                    image: 'imagelink',
+                    githubId: 'bkbkal'
+                }
+            },
+            {},{}...
+        ]
+    */
+    const users = props.users;
+
     return (
         <Tabs variant="unstyled">
             <TabList
@@ -56,10 +83,10 @@ const ListDown: NextComponentType = () => {
 
             <TabPanels>
                 <TabPanel>
-                    <ProfileList />
+                    <ProfileList users={users}/>
                 </TabPanel>
                 <TabPanel>
-                    <ProfileList />
+                    개발중...
                 </TabPanel>
             </TabPanels>
         </Tabs>

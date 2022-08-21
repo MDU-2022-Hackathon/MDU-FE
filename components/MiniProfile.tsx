@@ -1,9 +1,24 @@
 import { Box, Flex } from "@chakra-ui/react";
-import type { NextComponentType } from "next";
 import Image from "next/image";
-import ProfileImage from "../assets/프로필.jpg";
 
-const MiniProfile: NextComponentType = () => {
+const MiniProfile : any = (props : any) => {
+    console.log("Mini");
+    const user = props.user;
+    
+    console.log(user);
+
+    let color;
+
+    if(user.normal.type === 'pm'){
+       color = 'blue';
+    }
+    else if(user.normal.type === 'developer'){
+        color = 'yellow';
+    }
+    else{
+        color = 'orange';
+    }
+
     return (
         <Flex
             flexDirection="column"
@@ -27,7 +42,8 @@ const MiniProfile: NextComponentType = () => {
                 position="relative"
             >
                 <Image
-                    src={ProfileImage}
+                    src=""
+                    alt="profile"
                     width="100%"
                     height="100%"
                     layout="fill"
@@ -37,16 +53,16 @@ const MiniProfile: NextComponentType = () => {
                 w="140px"
                 h="26px"
                 borderBottom="solid"
-                borderColor="black"
+                borderColor={color}
                 textAlign="center"
                 fontWeight="semibold"
                 fontSize="13px"
                 mb="7.6px"
             >
-                이름
+                {user.identification.name}
             </Box>
-            <Box fontSize="10px" color="rgb(112, 112, 112)">
-                자기소개
+            <Box fontSize="10px" color="rgb(112, 112, 112)" overflow="hidden">
+                {user.normal['self-introduction']}
             </Box>
         </Flex>
     );
