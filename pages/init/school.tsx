@@ -41,7 +41,7 @@ const SignIn: NextPage = () => {
                         marginTop={4}
                         colorScheme="brand"
                         onClick={() => {
-                            Router.push("init/skill");
+                            Router.push("/init/skill");
                         }}
                     >
                         입력 하기

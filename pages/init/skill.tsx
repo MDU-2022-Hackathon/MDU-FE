@@ -103,7 +103,7 @@ const SignIn: NextPage = () => {
                         marginTop={4}
                         colorScheme="brand"
                         onClick={() => {
-                            Router.push("init/introduce");
+                            Router.push("/init/introduce");
                         }}
                     >
                         입력 하기
